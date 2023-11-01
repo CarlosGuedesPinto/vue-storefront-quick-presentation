@@ -37,6 +37,12 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+      - name: Install dependencies
+        id: npm-install
+        run: echo "npm install"
+      - name: Serve
+        id: npm-run-serve
+        run: echo "npm run serve"
 
   # Deployment job
   deploy:
