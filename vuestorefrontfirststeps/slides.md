@@ -25,36 +25,33 @@ What is? and first look at it
   </span>
 </div> -->
 
-<div class="abs-br m-6 flex flex-col gap-2">
-  <!-- <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button> -->
-  <div>
-    <a href="https://www.linkedin.com/in/carlos-guedes-pinto/" target="_blank" alt="LinkedIn" title="Open in LinkedIn"
-      class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white w-3/6">
-      <carbon-logo-linkedin />
-      @CarlosGuedesPinto
-    </a>
-    <a href="https://github.com/CarlosGuedesPinto" target="_blank" alt="GitHub" title="Open in GitHub"
-      class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white w-3/6">
-      <carbon-logo-github />
-      @CarlosGuedesPinto
-    </a>
-  </div>
-  <div class="flex">
-    <a href="https://github.com/CarlosGuedesPinto" target="_blank" alt="GitHub" title="Open in GitHub"
-      class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white w-3/6">
-      Front End Developer
-    </a>
-    <a href="https://github.com/CarlosGuedesPinto" target="_blank" alt="Parkside" title="Open Parkside"
-      class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white flex w-3/6">
-      <img
-        class="w-5 h-5 opacity-50 self-center mr-2"
-        src="/assets/parksideinteractive_logo.jpeg"
-        alt="Parkside Logo"
-      />
-      Parkside Interactive
-    </a>
+<div class="abs-br m-6 flex gap-2 w-[95%] justify-between">
+  <img class="rounded-full border-solid border-cyan-200 border-2 w-40 h-40" src="https://media.licdn.com/dms/image/C4E03AQHQaHp2JblgQA/profile-displayphoto-shrink_800_800/0/1579986311281?e=1704326400&v=beta&t=MNHLwaMcP4yokod24rPdghz9OQHDaxc7shYkXyOGOTY">
+  <div class="info self-end">
+    <div>
+      <a href="https://www.linkedin.com/in/carlos-guedes-pinto/" target="_blank" alt="LinkedIn" title="Open in LinkedIn"
+        class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white w-3/6">
+        <carbon-logo-linkedin />
+        @CarlosGuedesPinto
+      </a>
+      <a href="https://github.com/CarlosGuedesPinto" target="_blank" alt="GitHub" title="Open in GitHub"
+        class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white w-3/6">
+        <carbon-logo-github />
+        @CarlosGuedesPinto
+      </a>
+    </div>
+    <div class="flex">
+      <span class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white flex w-3/6">Front End Developer</span>
+      <a href="https://www.parkside-interactive.com/" target="_blank" alt="Parkside" title="Open Parkside"
+        class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white flex w-3/6">
+        <img
+          class="w-5 h-5 opacity-50 self-center mr-2"
+          src="/assets/parksideinteractive_logo.jpeg"
+          alt="Parkside Logo"
+        />
+        Parkside Interactive
+      </a>
+    </div>
   </div>
 </div>
 
@@ -67,7 +64,8 @@ Here is another comment.
 -->
 
 ---
-layout: default
+layout: image-right
+image: https://cdn.worldvectorlogo.com/logos/vue-storefront-icon.svg
 ---
 
 # Table of contents
@@ -81,6 +79,7 @@ transition: fade-out
 # What is Vue Storefront?
 
 Vue Storefront is a versatile, open-source eCommerce Progressive Web Application (PWA) written in Vue.js. It is backend-agnostic, meaning it can connect to any eCommerce platform to serve as a frontend.
+It is not just one product. **It provides an ecosystem of independent developer tools** adressing challenges that we will inevitably encounter when building an eCommerce storefront, such as:
 
 - ✅ Building a scalable **Design System** with accessible components to keep consistency between different user interface elements.
 - ✅ Building a fast and reliable **storefront** that delivers excellent User Experience to your customers.
@@ -94,7 +93,7 @@ Vue Storefront is a versatile, open-source eCommerce Progressive Web Application
 </a>
 
 <!--
-It is not just one product. **It provides an ecosystem of independent developer tools** adressing challenges that we will inevitably encounter when building an eCommerce storefront, such as:
+Vue Storefront is a platform that allows developers to build eCommerce applications using Vue.js. It's an open-source project, so developers can contribute to its development or use it for free in their projects. It's also backend-agnostic, meaning it can connect with any eCommerce platform, providing a seamless frontend experience.
 -->
 
 ---
@@ -111,6 +110,15 @@ Vue Storefront is a versatile, open-source eCommerce Progressive Web Application
 - [**Offline Mode:**](https://ecommerce-platforms.com/ecommerce-reviews/vue-storefront-review) Users can access the native experience directly through their web browsers, even when offline.
 - [**Community Support:**](https://vuestorefront.io/blog/quick-vue-storefront-getting-started-guide) Vue Storefront is a popular open-source project with a strong and growing community, which ensures constant updates and improvements.
 
+<!--
+Vue Storefront provides several key features that make it a popular choice for eCommerce development:
+
+**Headless Architecture:** This means Vue Storefront can work with any backend eCommerce platform, providing a seamless frontend integration.<br>
+**Progressive Web App:** Vue Storefront is built as a PWA, which means it behaves like a native app on mobile devices, providing an immersive user experience.<br>
+**Offline Mode:** Vue Storefront can work offline, which means users can still browse products and add them to their cart even without an internet connection.<br>
+**Community Support:** Being an open-source project, Vue Storefront has a large community of developers who contribute to its development and provide support for other developers.
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -124,6 +132,14 @@ Vue Storefront operates through three key concepts:
 2. [**Vue Storefront Modules:**](https://medium.com/the-vue-storefront-journal/introduction-to-vue-storefront-a-quick-getting-started-guide-d119023ed67d) These are the eCommerce features, such as cart, wishlist, catalog, and third-party integrations.
 3. [**Vue Storefront Themes:**](https://medium.com/the-vue-storefront-journal/introduction-to-vue-storefront-a-quick-getting-started-guide-d119023ed67d) These are the actual shop implementations, allowing you to use and extend the logic from registered modules/core and add your own HTML markup and styles.
 
+<!--
+Vue Storefront works based on three main concepts:
+
+**Vue Storefront Core:** This is the heart of the application, providing all the essential functionalities and libraries required to run the application.<br>
+**Vue Storefront Modules:** These are specific features related to eCommerce, like the shopping cart, wishlist, product catalog, and third-party integrations.<br>
+**Vue Storefront Themes:** These are the visual components of the application. They provide the HTML markup and styles that define the look and feel of the eCommerce site.
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -133,6 +149,10 @@ level: 2
 
 Vue Storefront can be connected with any eCommerce platform through [**vue-storefront-api**](https://vuestorefront.io/blog/quick-vue-storefront-getting-started-guide) and dedicated API connectors. This allows Vue Storefront to work with the backend platform, making it platform-agnostic.
 
+<!--
+Vue Storefront connects with the backend eCommerce platform using vue-storefront-api and dedicated API connectors. This allows Vue Storefront to pull data from the backend and display it on the frontend.
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -141,6 +161,10 @@ level: 2
 # Vue Storefront Themes
 
 Vue Storefront provides fully customizable [themes](https://ecommerce-platforms.com/ecommerce-reviews/vue-storefront-review), allowing you to create your own eCommerce themes and combine them with the app's core business logic. You can even customize its core components to meet your specific needs.
+
+<!--
+Vue Storefront allows developers to create custom themes for their eCommerce site. These themes can be fully customized to match the branding and design requirements of any business.
+-->
 
 ---
 transition: slide-up
@@ -155,6 +179,14 @@ Vue Storefront provides fully customizable [themes](https://ecommerce-platforms.
 - [**Improved Performance:**](https://ecommerce-platforms.com/ecommerce-reviews/vue-storefront-review) PWAs are known to load extremely fast even in poor network conditions, improving website performance.
 - [**Enhanced SEO:**](https://ecommerce-platforms.com/ecommerce-reviews/vue-storefront-review) As a PWA, your eCommerce site is still considered a website by Google, allowing it to be indexed accordingly and potentially improving your SEO ranking.
 
+<!--
+Using Vue Storefront provides several benefits:
+
+**Better User Experience:** Because it's a PWA, Vue Storefront provides an app-like experience on mobile devices, improving the overall user experience.<br>
+**Improved Performance:** PWAs are known for their speed and performance, which means your eCommerce site will load faster and provide a smoother browsing experience.<br>
+**Enhanced SEO:** Despite being a PWA, Vue Storefront is still seen as a website by search engines, which can help improve your SEO ranking.
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -164,15 +196,9 @@ level: 2
 
 Vue Storefront is a powerful tool for any eCommerce business. Its flexibility, performance, and community support make it an ideal choice for enhancing customer experiences.
 
-
-
-
-
-
-
-
-
-
+<!--
+In conclusion, Vue Storefront is a powerful tool for any eCommerce business. It offers flexibility, performance, and a strong community support, making it an ideal choice for businesses looking to improve their online shopping experience.
+-->
 
 ---
 transition: slide-up
